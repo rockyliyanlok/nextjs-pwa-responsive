@@ -1,7 +1,13 @@
 import App from 'next/app'
+import GlobalStyle from '../styles/global'
 
 const MyApp = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 MyApp.getInitialProps = async ctx => {
