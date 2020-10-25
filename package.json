@@ -14,5 +14,8 @@
     "react-dom": "16.13.1",
     "styled-components": "^5.2.0",
     "styled-reset": "^4.2.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.11.1"
   }
 }
