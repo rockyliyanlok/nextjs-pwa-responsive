@@ -1,0 +1,37 @@
+{
+  "theme_color": "#FFFFFF",
+  "background_color": "#333333",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Next.js responsive PWA",
+  "app_name": "Next.js responsive PWA",
+  "short_name": "Next.js responsive PWA",
+  "description": "Build a responsive PWA using Next.js and styled-components",
+  "icons": [
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
