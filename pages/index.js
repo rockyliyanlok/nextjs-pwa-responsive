@@ -22,7 +22,7 @@ const Index = () => {
       </Head>
       <Grid>
         <Row>
-          <Col>
+          <Col xs={12} sm={10} md={10} lg={10} smOffset={1} mdOffset={1} lgOffset={1}>
             Next.js responsive PWA
           </Col>
         </Row>
