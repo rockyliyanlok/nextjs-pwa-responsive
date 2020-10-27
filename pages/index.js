@@ -1,3 +1,8 @@
+import {
+  Grid,
+  Row,
+  Col
+} from 'react-styled-flexboxgrid'
 import Head from 'next/head'
 import React from 'react'
 
@@ -15,9 +20,13 @@ const Index = () => {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
         <meta name="theme-color" content="#FFFFFF"/>
       </Head>
-      <div>
-        Next.js responsive PWA
-      </div>
+      <Grid>
+        <Row>
+          <Col>
+            Next.js responsive PWA
+          </Col>
+        </Row>
+      </Grid>
     </>
   )
 }
