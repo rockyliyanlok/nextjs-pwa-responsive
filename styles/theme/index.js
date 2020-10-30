@@ -10,7 +10,11 @@ import {
 export default {
   colors: {
     mineShaft: '#333333',
-    white: '#ffffff'
+    white: '#ffffff',
+    eggBlue: '#07cbd6',
+    salmon: '#ff7a7a',
+    amber: '#ffc400',
+    cornflowerBlue: '#4285f4'
   },
   flexboxgrid: {
     gridSize, // columns
