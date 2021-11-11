@@ -5,7 +5,7 @@ export default css`
  html,
  body {
    background-color: ${theme.colors.mineShaft};
-   color: ${theme.colors.white};
+   color: ${theme.colors.mineShaft};
    text-rendering: optimizeLegibility;
    -webkit-font-smoothing: antialiased;
    -webkit-tap-highlight-color: transparent;
