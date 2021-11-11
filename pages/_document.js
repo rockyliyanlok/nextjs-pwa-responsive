@@ -1,7 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import {
-  getCspScriptSrcExtra,
-  getCspStyleSrcExtra,
+  getCspNonce,
   getCsp
 } from '../utils/csp'
 import { getLangFromReq } from '../utils/fromReq'
@@ -35,16 +34,15 @@ class MyDocument extends Document {
   }
 
   render() {
+    const nonce = getCspNonce()
+
     return (
       <Html lang={this.props.lang}>
         <Head nonce={nonce}>
           <meta name="description" content="Build a responsive PWA using Next.js and styled-components."></meta>
           <meta name="theme-color" content="#FFFFFF"/>
           <meta name="referrer" content={'strict-origin'} />
-          <meta httpEquiv="Content-Security-Policy" content={getCsp({
-            scriptSrcExtra: getCspScriptSrcExtra(NextScript.getInlineScriptSource(this.props)),
-            styleSrcExtra: getCspStyleSrcExtra()
-          })} />
+          <meta httpEquiv="Content-Security-Policy" content={getCsp(nonce)} />
           
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
