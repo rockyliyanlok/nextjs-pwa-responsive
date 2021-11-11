@@ -16,8 +16,6 @@ const getCsp = ({
   styleSrcExtra
 }) => {
   const csp = []
-  const hash = crypto.createHash('sha256').update(inlineScriptSource)
-  const digest = hash.digest('base64')
 
   csp.push(`base-uri 'self'`)
   csp.push(`form-action 'self'`)
