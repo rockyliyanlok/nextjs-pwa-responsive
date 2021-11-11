@@ -2,7 +2,7 @@ import crypto from 'crypto'
 
 const isProd = process.env.NODE_ENV === 'production'
 
-const getCspNonce = () => crypto.randomBytes(8).toString('base64')
+const getCspNonce = () => crypto.randomBytes(16).toString('base64')
 
 const getCsp = nonce => {
   const csp = []
