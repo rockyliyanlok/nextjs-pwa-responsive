@@ -8,7 +8,7 @@ const getCspScriptSrcExtra = inlineScriptSource => {
 }
 
 const getCspStyleSrcExtra = () => {
-  return `nonce-${randomBytes(8).toString('base64')}`
+  return `nonce-${crypto.randomBytes(8).toString('base64')}`
 }
 
 const getCsp = ({
