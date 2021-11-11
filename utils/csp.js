@@ -10,7 +10,7 @@ const getCsp = inlineScriptSource => {
   csp.push(`form-action 'self'`)
   csp.push(`default-src 'self'`)
   csp.push(`script-src 'self'${isProd ? '' : ` 'unsafe-eval'`} 'sha256-${hash.digest('base64')}'`)
-  csp.push(`style-src 'self'${isProd ? '': ` 'unsafe-inline'`}`)
+  csp.push(`style-src 'self'${isProd ? '': ` 'unsafe-inline'`} 'sha256-${hash.digest('base64')}'`)
   csp.push(`connect-src 'self' vitals.vercel-insights.com`)
   csp.push(`img-src 'self' data: blob:`)
   csp.push(`font-src 'self' data:`)
