@@ -11,7 +11,7 @@ const getCsp = nonce => {
   csp.push(`form-action 'self'`)
   csp.push(`default-src 'self'`)
   csp.push(`script-src 'self'${isProd ? '' : ` 'unsafe-eval'`} 'nonce-${nonce}' data:`)
-  csp.push(`style-src 'self'${isProd ? '': ` 'unsafe-inline'`} 'nonce-${nonce}' data: blob:`)
+  csp.push(`style-src 'self' 'unsafe-inline' data: blob:`)
   csp.push(`connect-src 'self' vitals.vercel-insights.com`)
   csp.push(`img-src 'self' data: blob:`)
   csp.push(`font-src 'self' data:`)
