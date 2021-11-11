@@ -37,7 +37,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang={this.props.lang}>
-        <Head>
+        <Head nonce={nonce}>
           <meta name="description" content="Build a responsive PWA using Next.js and styled-components."></meta>
           <meta name="theme-color" content="#FFFFFF"/>
           <meta name="referrer" content={'strict-origin'} />
